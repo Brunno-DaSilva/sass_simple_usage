@@ -1,19 +1,39 @@
-// Comments
-/*Comments */
+/*
+    This is how you add multiple lines of Comments 
+*/
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import "./header";
+// In line Comments
+
+//=====================
+//     Imports
+//=====================
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"); //External Sources
+@import "./header"; //From other SCSS files - Modular!
+@import "./card"; //From other SCSS files - Modular!
+
+//=====================
+//     Functions
+//=====================
+
+@mixin flexBox($direc, $jcontent) {
+  display: flex;
+  flex-direction: $direc;
+  justify-content: $jcontent;
+  align-items: center;
+}
 
 //=====================
 //     Variables
 //=====================
 
 $main-font: "Open Sans", sans-serif;
-$light-bg: #4c82b4;
+$light-bg: #a9d3fa;
 $light-text: #192f5e;
-$dark-bg: #1a2244;
-$dark-text: #ffffff;
-//You can import the variables to a separate file as well.
+$dark-bg: #e0eeff;
+$dark-text: #ffc66d;
+
+//You could also import the variables from a separate file.
 
 *,
 *::before,
@@ -32,8 +52,12 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  @include flexBox(column, space-between);
+}
+
+section {
+  @include flexBox(row, center);
+  width: 100%;
+  height: 50%;
+  padding: 0.5rem;
 }

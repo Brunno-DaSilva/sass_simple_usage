@@ -15,6 +15,7 @@
 
     <title>Be Sass 😎 Example</title>
   </head>
+
   <body>
     <header class="header">
       <div class="header__overlay"></div>
@@ -27,56 +28,60 @@
       </h1>
     </header>
 
-    <div class="card card--light-mode">
-      <div class="card-top">
-        <img
-          class="card__img"
-          src="https://source.unsplash.com/user/nasa"
-          alt="nasa"
-        />
-      </div>
-      <div class="card-middle">
-        <div class="card__desc">
-          <p class="desc__p-item">
-            Some text that you probably wont understand, who cares, I made my
-            point.No!Not the bees. #cagereference #nickboy #financialadviser
-          </p>
+    <section>
+      <div class="card card--light-mode">
+        <div class="card-top">
+          <div
+            class="card__img"
+            style="
+              background-image: url('https://source.unsplash.com/U2uKrI4lci8');
+            "
+          ></div>
+        </div>
+        <div class="card-middle">
+          <div class="card__desc">
+            <p class="desc__p-item">
+              Some text that you probably wont understand, who cares, I made my
+              point.No!Not the bees. #cagereference #nickboy #financialadviser
+            </p>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <button class="card-bottom__btn card-bottom__btn--light">
+            take a look
+          </button>
+          <button class="card-bottom__btn card-bottom__btn--gray">
+            subscribe
+          </button>
         </div>
       </div>
-      <div class="card-bottom">
-        <button class="card-bottom__btn card-bottom__btn--green">
-          take a look
-        </button>
-        <button class="card-bottom__btn card-bottom__btn--blue">
-          subscribe
-        </button>
-      </div>
-    </div>
 
-    <div class="card card--dark-mode">
-      <div class="card-top">
-        <img
-          class="card__img"
-          src="https://source.unsplash.com/WKT3TE5AQu0"
-          alt="nasa"
-        />
-      </div>
-      <div class="card-middle">
-        <div class="card__desc">
-          <p class="desc__p-item">
-            Some text that you probably wont understand, who cares, I made my
-            point.No!Not the bees. #cagereference #nickboy #financialadviser
-          </p>
+      <div class="card card--dark-mode">
+        <div class="card-top">
+          <div
+            class="card__img"
+            style="
+              background-image: url('https://source.unsplash.com/n463SoeSiVY');
+            "
+          ></div>
+        </div>
+        <div class="card-middle">
+          <div class="card__desc">
+            <p class="desc__p-item">
+              Some text that you probably wont understand, who cares, I made my
+              point.No!Not the bees. #cagereference #nickboy #financialadviser
+            </p>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <button class="card-bottom__btn card-bottom__btn--light">
+            take a look
+          </button>
+          <button class="card-bottom__btn card-bottom__btn--gray">
+            subscribe
+          </button>
         </div>
       </div>
-      <div class="card-bottom">
-        <button class="card-bottom__btn card-bottom__btn--yellow">
-          take a look
-        </button>
-        <button class="card-bottom__btn card-bottom__btn--lightblue">
-          subscribe
-        </button>
-      </div>
-    </div>
+    </section>
   </body>
 </html>
