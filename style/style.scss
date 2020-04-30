@@ -1,0 +1,39 @@
+// Comments
+/*Comments */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import "./header";
+
+//=====================
+//     Variables
+//=====================
+
+$main-font: "Open Sans", sans-serif;
+$light-bg: #4c82b4;
+$light-text: #192f5e;
+$dark-bg: #1a2244;
+$dark-text: #ffffff;
+//You can import the variables to a separate file as well.
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $dark-bg;
+  color: $dark-text;
+  font-family: $main-font;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
