@@ -31,4 +31,5 @@ Simple SCSS and BEM Methodology usage.
 
 ##### Check the code out, also take a look at this simple page demo
 
-#### Demo: https://dasilvabrunotexas.github.io/sass_simple_usage/
+#### Demo:  https://brunno-dasilva.github.io/sass_simple_usage/
+
